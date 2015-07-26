@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+@font-face { font-family: kanda; src: url("../fonts/PSL152SP.TTF") /* TTF file for CSS3 browsers */}
+
+
+body, html { padding: 0px; margin: 0px; height:100%; overflow-x:hidden}
+
+body { font: 13px/1.5 Helvetica,Thonburi,Arial,Tahoma,sans-serif; color: #212121; position:relative; }
+
+ul, li { list-style:none; padding:0px; margin:0px;}
+a { color: #000; text-decoration: none;}
+a:hover { color: #000; text-decoration: none;}
+img { border:none;}
+p { margin:5px 0px;}
+
+.content-area{width:100%; float:left; position:relative; margin:10px 0px;}
+
+.header-area{ background-color:#FFF;}
+
+
+/*-------------start mobile header---------------*/
+
+.mobile-longtry-area{ background-color:#fff; border:1px solid #f4f4f4;}
+.mobile-longtry-logo-area{ float:left; width:160px; height:60px; margin-left:5px; background-position:center; background-repeat:no-repeat; background-size:100%;}
+.mobile-longtry-area .navbar-toggle { padding:0px; margin:0px; background-color:#dcdcdc; border-radius:0px; width:70px; height:59px;}
+.longtry-mobile-collapse li { float:left; width:100%; border:1px solid #f4f4f4; margin:-1px -1px 0px 0px; }
+.longtry-mobile-collapse li a{ padding:15px; color:#707070; text-align:center;}
+.longtry-mobile-collapse li a p{color: #fff; font-size: 14px;}
+.longtry-mobile-collapse li a:hover, .longtry-mobile-collapse li a:focus, .longtry-mobile-collapse li a:visited{ color:#707070; }
+
+
+
+.logo-head-wrapper{ width:100%; float:left; display:block; padding: 5px;}
+
+.logo-head-area{ float:left; width:100%; }
+
+.logo-head-longtry{  width:100%; position: relative;  text-align:center;   }
+.logo-head-longtry p{ letter-spacing:4px; font-size:14px; color:#fff; font-family:kanda; }
+.head-longtry{font-family: kanda; letter-spacing:2px;font-size: 40px;   position: relative;  border: 2px solid #fff; padding: 10px 20px; color:#fff; }
+
+.line-head{ border:1px solid #fff;  float: left;  width: 100%; margin-top:-70px;}
+
+.line-head-logoleft {   border: 1px solid #fff;  left: 0;  margin-top: 30px;  width: 510px;  position: absolute;}
+
+.line-head-logoright{  border: 1px solid #fff;  right: 0;  margin-top: -60px;  width: 510px;  position: absolute;}
+
+.longtry-logo-area{ width:100%; float:left; position:relative;}
+.longtry-nav-area{ width:100%; position:absolute; z-index:1; top:20px;}
+.longtry-nav-area .nav{ position: relative; z-index: 21; top:0px; float:left; width:100%; text-align:center;}
+.longtry-nav-area .nav li { display: inline-block; }
+.longtry-nav-area .nav > li > a { font-size:20px; font-family: kanda; color: #fff; padding: 10px 20px; letter-spacing:1px; }
+.longtry-nav-area .nav > li > a.active, .longtry-nav-area .nav > li > a:hover, .longtry-nav-area .nav > li > a:focus { color: #000; background:none;  }
+.longtry-nav-area .nav p{ font-size:20px; color:#fff; padding:0px; margin:0px;}
+.longtry-nav-area .navbar-toggle { margin:0px; padding:0px;}
+
+
+
+.title-hilight{ position: absolute;    top:50%; left:50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);}
+.title-hilight p{font-size:120px;font-family: kanda; letter-spacing:3px;font-weight:bold; color:#fff; margin:0px; line-height:80px;  border: 2px solid #fff;  padding: 10px 30px;}
+.view-more-hilight{ position: absolute; font-size:40px;font-family: kanda; letter-spacing:5px; color:#fff; float:left; width:100%; text-align:center;  }
+
+/* Home Page Carousel */
+
+header.carousel {height: auto;}
+
+header.carousel .item,header.carousel .item.active,header.carousel .carousel-inner {    height: 100%; width:100%; margin:0 auto;}
+
+header.carousel .fill {    width: 1400px;    height: 100%;    background-position: center;    background-size: cover;}
+
+.carousel-control {  position: absolute;  top: 0;  bottom: 0;  right: 0;  width: 100%;  font-size: 20px;  color: #fff;  text-shadow: 0 1px 2px rgba(0, 0, 0, .6);  filter: alpha(opacity=50);  z-index: 16;  left: inherit;  text-align: right;}
+
+.carousel-area{  position: absolute;  top: 40%;  bottom: 0;  right:0;  width:100%; height:45px;  z-index: 30;  text-align: center;}
+.prev{ float:left; width:33px; height:84px; position:relative; margin:5px 0px; left:18%;}
+.prev img{ width:100%;}
+.next{float:left; width:33px; height:84px;position:relative;margin:5px 0px; left:78%; }
+.next img{ width:100%; }
+
+.header.carousel .fill{  width: 100%;  height: 100%;  background-position: center;  background-size: cover;}
+.fill img{ width: 100%;  }
+
+
+.title-longtry{ width:100%; position:relative; float:left; margin-bottom:10px;}	
+.title-longtry h1{ position:relative; float:left; font-size:50px; font-family:kanda; text-align:center; padding:0px 20px;   top:50%; left:50%;transform: translate(-50%, 0%);-webkit-transform: translate(-50%, 0%);-ms-transform: translate(-50%, 0%); background:#fff;}
+.line-head{ border:1px solid #000;  float: left;  width: 100%; margin-top:-40px; }
+
+
+.thump-longtry-area { width:100%; position: relative; float:left;}
+
+.thump-longtry{width:100%; position: relative; float:left; }
+.thump-longtry li{ width:25%; float:left; position: relative; border:3px solid #fff;  background:#000;   }
+.thump-longtry li a{ width:100%; position: relative; float:left; }
+.thump-longtry li a:hover{ opacity:.6;}
+.thump-longtry img{ width:100%; }
+.title-cat{ position: absolute; font-family: kanda; font-size:20px; z-index:2; letter-spacing:3px;font-weight:bold; color:#fff; margin:0px; line-height:20px;  border: 3px solid #fff;  padding: 10px;    top:50%; left:50%;transform: translate(-50%, -50%);-webkit-transform: translate(-50%, -50%);-ms-transform: translate(-50%, -50%);}
+
+.footer-area{ width:100%; float:left; position:relative; background:#ebebeb;   padding:10px 0px;}
+.logo-footer{ width:100%; text-align:center; position:relative;}
+.logo-footer img{ width:155px;}
+.logo-footer p{ font-family:kanda; font-size:13px; letter-spacing:10px; margin:0px;}
+.footer-contact{ width:100%; text-align:center;font-family:kanda; font-size:18px; font-weight:bold; letter-spacing:5px;}
+.copy-right{width:100%; float:left; position:relative; background:#fff; height:20px; font-family:kanda; text-align:center; margin:0px; font-size:13px; letter-spacing:3px;}
+
+/*view-album*/
+
+.head-view-album-longtry{font-family: kanda; letter-spacing:2px;font-size: 40px;   position: relative;  border: 2px solid #000; padding: 10px 20px; color:#000; }
+.logo-head-view-album-longtry{  width:100%; position: relative;  text-align:center;   }
+.logo-head-view-album-longtry p{ letter-spacing:4px; font-size:14px; color:#000; font-family:kanda; }
+.view-album-longtry-logo-area{ width:100%; float:left; position:relative;}
+.view-album-longtry-nav-area{ width:100%; position: relative; z-index:1; top:10px;   border-bottom: 2px solid #000;}
+.view-album-longtry-nav-area .nav{ position: relative; z-index: 21; top:0px; float:left; width:100%; text-align:center;}
+.view-album-longtry-nav-area .nav li { display: inline-block; }
+.view-album-longtry-nav-area .nav > li > a { font-size:20px; font-family: kanda; color: #000; padding: 10px 20px; letter-spacing:1px; }
+.view-album-longtry-nav-area .nav > li > a.active, .longtry-nav-area .nav > li > a:hover, .longtry-nav-area .nav > li > a:focus { color: #000; background:none; background-color:inherit;  }
+.view-album-longtry-nav-area .nav p{ font-size:20px; color:#000; padding:0px; margin:0px;}
+.view-album-longtry-nav-area .navbar-toggle { margin:0px; padding:0px;}
+
+.title-port-event{ width:100%; float:left; position:relative;text-align: center;  font-size: 30px ;color:#000;;  font-family: kanda;}
+.detail-port-event{width:100%; float:left; position:relative;text-align: center;  font-size: 20px; color:#000;  font-family: kanda;}
+/*end view-album*/
+
+.thumbnail{  display: block;  padding: 0px;  margin-bottom: 0px;  line-height: 1.42857143;  background-color: inherit;  border: none;  border-radius: 4px;  -webkit-transition: all .2s ease-in-out;  -o-transition: all .2s ease-in-out;  transition: all .2s ease-in-out;}
+	
+#lightbox .modal-content {
+    display: inline-block;
+    text-align: center;   
+}
+
+#lightbox .close {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    background-color: rgb(25, 25, 25);
+    padding: 5px 8px;
+    border-radius: 30px;
+    border: 2px solid rgb(255, 255, 255);
+    position: absolute;
+    top: -15px;
+    right: -55px;
+    
+    z-index:1032;
+}
+
+@media (max-width: 767px) { 
+.container {}
+header.carousel {height: auto;}
+.head-longtry{font-size:40px;   position: relative;  border: 2px solid #000; padding: 0px 20px; color:#000; }
+.title-hilight p{  font-size:30px; line-height:20px;}
+.prev{   left: 8%;  top: -70%;}
+.next{ left:78%; top: -70%;}
+.thump-longtry li{ width:100%;}
+
+
+
+}
+
+@media (min-width: 768px) { 
+.container {width: 750px; }
+header.carousel{ height:auto;}
+.longtry-nav-area{ top:10px;}
+.line-head-logoleft{ width:250px;}
+.line-head-logoright{ width:250px;}
+.prev{ left:8%;}
+.next{ left:88%;}
+.title-hilight p{  font-size:50px; line-height:30px;}
+.thump-longtry li{ width:50%;}
+
+}
+
+@media (min-width: 992px) { 
+.container {width: 1000px; }
+header.carousel{ height:auto;}
+.longtry-nav-area{ top:10px;}
+.line-head-logoleft{ width:390px;}
+.line-head-logoright{ width:390px;}
+.prev{ left:8%;}
+.next{ left:88%;}
+.title-hilight p{  font-size:80px; line-height:80px;}
+.thump-longtry li{ width:25%;}
+
+}
+
+@media (min-width: 1200px) { 
+.container{ width: 100%; max-width:1200px;position:relative;}
+.longtry-nav-area{ top:20px;}
+.line-head-logoleft{ width:510px;}
+.line-head-logoright{ width:510px;}
+.prev{ left:18%;}
+.next{ left:78%;}
+.title-hilight p{  font-size:120px;}
+
+}

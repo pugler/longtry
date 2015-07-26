@@ -14,10 +14,10 @@ class Admin extends CI_Controller {
 		$this->load->view('admin/login');
 	}
 
-	public function add_album_form() {
+	public function add_album_form() {		
 		$header['page'] = 'addalbum';
 		$return['admin_menu'] = $this->load->view('admin/admin_memu',$header,TRUE);
-		print_r($return); die;
+		//print_r($return); die;
 		$this->load->view('admin/header',$header);
 
 		$this->load->view('admin/add_album',$return);	
