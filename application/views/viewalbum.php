@@ -19,7 +19,7 @@
     <div class="row">
       <div class="mobile-longtry-logo-area">
         <div class="logo-head-area"> <span class="line-head-logoleft hidden-xs"></span>
-          <div class="logo-head-longtry"><a href="www.long-try.com"><span class="head-longtry">ลองถ่าย</span></a></div>
+          <div class="logo-head-longtry"><a href="<?php echo base_url();?>"><span class="head-longtry">ลองถ่าย</span></a></div>
           <span class="line-head-logoright hidden-xs"></span> </div>
       </div>
       <div class="navbar-header">
@@ -41,7 +41,7 @@
     <div class="view-album-longtry-logo-area">
       <div class="logo-head-wrapper">
         <div class="logo-head-area">
-          <div class="logo-head-view-album-longtry"><a href="www.long-try.com"><span class="head-view-album-longtry">ลองถ่าย</span></a><p>www.long-try.com</p></div>
+          <div class="logo-head-view-album-longtry"><a href="<?php echo base_url();?>"><span class="head-view-album-longtry">ลองถ่าย</span></a><p>www.long-try.com</p></div>
            </div>
       </div>
     </div>

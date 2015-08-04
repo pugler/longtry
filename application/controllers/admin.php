@@ -16,10 +16,16 @@ class Admin extends CI_Controller {
 
 	public function add_album_form() {		
 		$header['page'] = 'addalbum';
-		$return['admin_menu'] = $this->load->view('admin/admin_memu',$header,TRUE);
+		$return['admin_menu'] = $this->load->view('admin/admin_menu',$header,TRUE);
 		//print_r($return); die;
 		$this->load->view('admin/header',$header);
 
 		$this->load->view('admin/add_album',$return);	
+	}
+
+
+	public function postalbum() {
+		print_r($_POST);
+		print_r($_FILES);
 	}
 }

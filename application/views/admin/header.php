@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="<?php echo base_url();?>asset/css/admin.css" type="text/css" media="screen" title="default" />
 <!--  jquery core -->
 <script src="<?php echo base_url();?>asset/js/jquery/jquery-1.4.1.min.js" type="text/javascript"></script>
+
 <?php if($page == 'login') : ?>
 
 <?php elseif($page == 'addalbum') : ?>
