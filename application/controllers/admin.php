@@ -42,7 +42,7 @@ class Admin extends CI_Controller {
 		$upload_path = './upload/album_cover/';
 		$config['upload_path'] = $upload_path;
 		$config['allowed_types'] = 'gif|jpg|png';
-		$config['max_size']	= '100';
+		$config['max_size']	= 5*1024;
 		$config['max_width']  = '1024';
 		$config['max_height']  = '768';
 		$config['file_name'] = $album_id;
@@ -73,8 +73,36 @@ class Admin extends CI_Controller {
 		}
 		else
 		{
-			$data = array('upload_data' => $this->upload->data());
-			print_r($data);
+			$upload_data = $this->upload->data();
+			print_r($upload_data);
+			$this->load->library('image_lib');
+			$config['image_library'] = 'gd2';
+		    $config['source_image'] = $upload_data['full_path'];
+		    $config['new_image'] = $upload_data["file_path"] . $upload_data['raw_name'].'.jpg';
+		   // $config['create_thumb'] = TRUE;
+		    $config['master_dim'] = 'width';
+		    $config['maintain_ratio'] = TRUE;
+		    $config['width']     = 294;
+		    $config['height']   = 176;
+
+		    $this->image_lib->clear();
+		    $this->image_lib->initialize($config);
+		    $this->image_lib->resize();
+
+
+			$config['source_image'] = $upload_data["full_path"];
+			$config['new_image'] = $upload_data["file_path"] . $upload_data['raw_name'].'.jpg';
+			$config['quality'] = "100%";
+			$config['maintain_ratio'] = FALSE;
+			$config['width'] = 294;
+			$config['height'] = 176;
+			$config['x_axis'] = '0';
+			$config['y_axis'] = '0';
+			 
+			$this->image_lib->clear();
+			$this->image_lib->initialize($config); 
+			 
+			$this->image_lib->crop();
 			//$this->load->view('upload_success', $data);
 		}
 	}
