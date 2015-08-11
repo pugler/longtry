@@ -94,22 +94,9 @@
     
       <div class="thump-longtry-area">
         <ul class="thump-longtry">
-          <li><span class="title-cat">CONGRATULATIONS</span> <a href="#"> <img src="<?php echo base_url();?>asset/images/thump-01.jpg" /> </a> </li>
-          <li><span class="title-cat">STUDiO</span> <a href="#">  <img src="<?php echo base_url();?>asset/images/thump-02.jpg" /> </a> </li>
-          <li><span class="title-cat">EVENT</span> <a href="#">  <img src="<?php echo base_url();?>asset/images/thump-03.jpg" /> </a> </li>
-          <li><span class="title-cat">WEDING</span> <a href="#">  <img src="<?php echo base_url();?>asset/images/thump-04.jpg" /> </a> </li>
-          <li><span class="title-cat">CONGRATULATIONS</span> <a href="#"> <img src="<?php echo base_url();?>asset/images/thump-01.jpg" /> </a> </li>
-          <li><span class="title-cat">STUDiO</span> <a href="#">  <img src="<?php echo base_url();?>asset/images/thump-02.jpg" /> </a> </li>
-          <li><span class="title-cat">EVENT</span> <a href="#">  <img src="<?php echo base_url();?>asset/images/thump-03.jpg" /> </a> </li>
-          <li><span class="title-cat">WEDING</span> <a href="#">  <img src="<?php echo base_url();?>asset/images/thump-04.jpg" /> </a> </li>
-          <li><span class="title-cat">CONGRATULATIONS</span> <a href="#"> <img src="<?php echo base_url();?>asset/images/thump-01.jpg" /> </a> </li>
-          <li><span class="title-cat">STUDiO</span> <a href="#">  <img src="<?php echo base_url();?>asset/images/thump-02.jpg" /> </a> </li>
-          <li><span class="title-cat">EVENT</span> <a href="#">  <img src="<?php echo base_url();?>asset/images/thump-03.jpg" /> </a> </li>
-          <li><span class="title-cat">WEDING</span> <a href="#">  <img src="<?php echo base_url();?>asset/images/thump-04.jpg" /> </a> </li>
-          <li><span class="title-cat">CONGRATULATIONS</span> <a href="#"> <img src="<?php echo base_url();?>asset/images/thump-01.jpg" /> </a> </li>
-          <li><span class="title-cat">STUDiO</span> <a href="#">  <img src="<?php echo base_url();?>asset/images/thump-02.jpg" /> </a> </li>
-          <li><span class="title-cat">EVENT</span> <a href="#">  <img src="<?php echo base_url();?>asset/images/thump-03.jpg" /> </a> </li>
-          <li><span class="title-cat">WEDING</span> <a href="#">  <img src="<?php echo base_url();?>asset/images/thump-04.jpg" /> </a> </li>
+          <?php foreach($album_list as $album) : ?>
+            <li><span class="title-cat"><?php echo $album['album_name'];?></span> <a href="<?php echo base_url();?>album/<?php echo $album['album_id'];?>"> <img src="<?php echo base_url();?>upload/album_cover/<?php echo $album['album_id'];?>.jpg" /> </a> </li>          
+          <?php endforeach ?>
         </ul>
       </div>
     </div>

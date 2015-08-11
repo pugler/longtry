@@ -50,6 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'home';
+$route['album/(:num)'] = 'album/view_album/$1';
 $route['admin/addalbum'] = 'admin/add_album_form';
 
 $route['404_override'] = '';

@@ -90,7 +90,7 @@ header.carousel .fill {    width: 1400px;    height: 100%;    background-positio
 .thump-longtry-area { width:100%; position: relative; float:left;}
 
 .thump-longtry{width:100%; position: relative; float:left; }
-.thump-longtry li{ width:25%; float:left; position: relative; border:3px solid #fff;  background:#000;   }
+.thump-longtry li{ width:25%; float:left; position: relative; background:#000;   }
 .thump-longtry li a{ width:100%; position: relative; float:left; }
 .thump-longtry li a:hover{ opacity:.6;}
 .thump-longtry img{ width:100%; }

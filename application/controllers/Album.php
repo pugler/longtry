@@ -7,4 +7,16 @@ class Album extends CI_Controller {
 	{
 		$this->load->view('viewalbum');
 	}
+
+	public function view_album($id) {
+		$return = array();
+		$this->load->model('album_model');	
+		$param = array(
+					'album_id'	=> $id
+				); 
+		$album_detail = $this->album_model->get_album_detail($param);
+		$return['album_detail'] = $album_detail;
+		$this->load->view('viewalbum',$return);
+		
+	}
 }

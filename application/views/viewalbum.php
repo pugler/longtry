@@ -63,17 +63,17 @@
   <div class="container">
     <div class="row">
         <div class="title-longtry">
-          <h1>PORTRAIT</h1>
+          <h1><?php echo $album_detail['album_name']?></h1>
           <span class="line-head"></span></div>
 
-          <div class="title-port-event">ธ ร ร ม ด า ! เ ธ อ ทำ ผู้ ห ญิ ง ทั้ ง โ ล ก ดู ธ ร ร ม ด า </div>
-          <span  class="detail-port-event">Model : FiRST Gilrzaap   l   Location : BKK   l   20 JuLy 2015</span>
+          <div class="title-port-event"><?php echo $album_detail['album_description'];?></div>
+          <span  class="detail-port-event">Model : <?php echo $album_detail['album_model'];?>   |   Location : <?php echo $album_detail['album_location']?>   |   <?php echo date('d F y',strtotime($album_detail['album_create_date']))?></span>
    
       <div class="thump-longtry-area">
         <ul class="thump-longtry">
         
-          <li><span class="title-cat">CONGRATULATIONS</span> <a href="<?php echo base_url();?>asset/images/01.jpg"  class="thumbnail" > <img src="<?php echo base_url();?>asset/images/01.jpg" /> </a> </li>
-          <li> <span class="title-cat">STUDiO</span> <a href="<?php echo base_url();?>asset/images/02.jpg"  class="thumbnail" > <img src="<?php echo base_url();?>asset/images/02.jpg" /> </a> </li>
+          <li><span class="title-cat">CONGRATULATIONS</span> <a href="<?php echo base_url();?>asset/images/01.jpg"  class="thumbnail" rel="group" > <img src="<?php echo base_url();?>asset/images/01.jpg" /> </a> </li>
+          <li> <span class="title-cat">STUDiO</span> <a href="<?php echo base_url();?>asset/images/02.jpg"  class="thumbnail" rel="group" > <img src="<?php echo base_url();?>asset/images/02.jpg" /> </a> </li>
           <li> <span class="title-cat">EVENT</span> <a href="<?php echo base_url();?>asset/images/thump-03.jpg"  class="thumbnail"> <img src="<?php echo base_url();?>asset/images/thump-03.jpg" /> </a> </li>
           <li><span class="title-cat">WEDING</span>  <a href="<?php echo base_url();?>asset/images/thump-04.jpg"  class="thumbnail" > <img src="<?php echo base_url();?>asset/images/thump-04.jpg" /> </a> </li>
           
